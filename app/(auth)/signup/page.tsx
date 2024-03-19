@@ -13,11 +13,11 @@ export default function SignUp() {
 
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h1 className="h1">Welcome. We exist to make entrepreneurism easier.</h1>
+            <h1 className="h1">Odaberi paket koji najviše odgovara tebi!</h1>
           </div>
 
-          {/* Form */}
-          <div className="max-w-sm mx-auto">
+          {/* Sign up Form */}
+          {/* <div className="max-w-sm mx-auto">
             <form>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
@@ -76,7 +76,7 @@ export default function SignUp() {
             <div className="text-gray-600 text-center mt-6">
               Already using Simple? <Link href="/signin" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign in</Link>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

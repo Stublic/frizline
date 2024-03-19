@@ -29,7 +29,7 @@ export default function Hero() {
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           <div className= ' scale-85 sm:scale-100 flex justify-evenly items-center mb-8 sm:flex-wrap'>
-            <div className='text-center'>
+            <div className='text-center hidden sm:block'>
             <Stars/>
             <q className='text-white'>Uštedim više od sat vremena dnevno!</q>
             </div>
@@ -50,7 +50,7 @@ export default function Hero() {
               <p className="text-xl text-[#FBBE0D] mb-8" data-aos="zoom-y-out" data-aos-delay="150">Prepusti rezervaciju termina nama, a ti se fokusiraj na ono što zaista voliš! </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn hover:text-[#3F2182] hover:bg-[#efa9fa] bg-[#3F2182] text-[#efa9fa] w-full mb-4 sm:w-auto sm:mb-0" href="#0">Započni uz 1 mjesec besplatno</a>
+                  <a className="btn hover:text-[#3F2182] hover:bg-[#efa9fa] bg-[#3F2182] text-[#efa9fa] w-full mb-4 sm:w-auto sm:mb-0" href="#form">Započni uz 1 mjesec besplatno</a>
                 </div>
                 
               </div>

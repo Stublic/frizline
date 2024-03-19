@@ -90,9 +90,9 @@ export default function Testimonials() {
                     enter="transition ease-in-out duration-700 transform order-first"
                     enterFrom="opacity-0 translate-y-16"
                     enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
+                    // leave="transition ease-in-out duration-300 transform absolute"
+                    // leaveFrom="opacity-100 translate-y-0"
+                    // leaveTo="opacity-0 -translate-y-16"
                     unmount={false}                     
                   >
                   
@@ -112,7 +112,7 @@ export default function Testimonials() {
                   <span>Vlasnica salona </span> <a className="text-[#3F2182] hover:underline" href="#0"> FS Mirna</a>
                 </div>
               </div>
-              <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
+              <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0 hidden sm:block">
                 
                 <blockquote className="text-xl font-medium mb-4">
                   “ Baš mi je drago da si prešla online, ovak mi je lakše, samo odaberem termin koji mi paše i dođem. “
@@ -130,9 +130,9 @@ export default function Testimonials() {
                     enter="transition ease-in-out duration-700 transform order-first"
                     enterFrom="opacity-0 translate-y-16"
                     enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
+                    // leave="transition ease-in-out duration-300 transform absolute"
+                    // leaveFrom="opacity-100 translate-y-0"
+                    // leaveTo="opacity-0 -translate-y-16"
                     unmount={false}                     
                   >
                   
@@ -145,23 +145,14 @@ export default function Testimonials() {
                   </svg>
                 </div>
                 <blockquote className="text-xl font-medium mb-4">
-                  “ Oduševljena sam koliko manje moram misliti oko samog naručivanja, jednom dnevno prije nego se uputim prema salonu pogledam kalendar da vidim sve rezervacije i to je sav posao. “
-                </blockquote>
-                <cite className="block font-bold text-lg not-italic mb-1">Mirna Sabljić</cite>
+                  
+"Puno nam je pomoglo riješenje za online naručivanje. Kao vlasnica frizerskog salona, bila sam opterećena organizacijom termina i neprestanim telefonskim pozivima klijenata. S ovim rješenjem, sada imamo potpunu kontrolu nad našim rasporedom i rezervacijama, a moja zaposlenica troši puno manje vremena na telefoniranje. Smanjili smo obujam posla, i poboljšali iskustvo naših klijenata."</blockquote>
+                <cite className="block font-bold text-lg not-italic mb-1">Sabina Vlahović</cite>
                 <div className="text-gray-600">
-                  <span>Vlasnica salona </span> <a className="text-[#3F2182] hover:underline" href="#0"> FS Mirna</a>
+                  <span>Vlasnica salona </span> <a className="text-[#3F2182] hover:underline" href="https://sabininabrijacnica.com/"> Sabinina Brijačnica</a>
                 </div>
               </div>
-              <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
-                
-                <blockquote className="text-xl font-medium mb-4">
-                  “ Baš mi je drago da si prešla online, ovak mi je lakše, samo odaberem termin koji mi paše i dođem. “
-                </blockquote>
-                <cite className="block font-bold text-lg not-italic mb-1">Antonio</cite>
-                <div className="text-gray-600">
-                  <span>Korisnik</span> <a className="text-[#3F2182] hover:underline" href="#0">FS Mirna</a>
-                </div>
-              </div>
+              
               </Transition>
             </div>
 

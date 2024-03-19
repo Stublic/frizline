@@ -43,7 +43,7 @@ export default function Header() {
                 <Link href="#pricing" className="font-medium text-[#efa9fa] hover:text-[#3F2182] px-5 py-3 flex items-center transition duration-150 ease-in-out">Paketi</Link>
               </li>
               <li>
-                <Link href="/signup" className="btn-sm hover:text-[#3F2182] hover:bg-[#efa9fa] bg-[#3F2182] text-[#efa9fa] ml-3">
+                <Link href="#form" className="btn-sm hover:text-[#3F2182] hover:bg-[#efa9fa] bg-[#3F2182] text-[#efa9fa] ml-3">
                   <span>Započni uz 1 mjesec besplatno!</span>
                   
                 </Link>

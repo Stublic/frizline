@@ -1,10 +1,11 @@
 "use client"
 import Lottie from "lottie-react";
 import animation from "@/public/images/animation.json";
+import SignupForm from './Signup-form'
 
 export default function Newsletter() {
   return (
-    <section>
+    <section id="form">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
 
@@ -23,15 +24,8 @@ export default function Newsletter() {
                 <p className="text-gray-700 text-lg mb-6">Ukoliko ste zainteresirani, ostavite nam svoju email adresu i kontaktirati ćemo vas kada usluga bude dostupna.</p>
 
                 {/* CTA form */}
-                <form className="w-full lg:w-auto">
-                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                    <input type="email" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Email ..." aria-label="Email" />
-                    <a className="btn hover:text-[#3F2182] text-[#efa9fa] bg-[#3F2182] hover:bg-[#efa9fa] shadow" href="mailto:stublic.jurica@gmail.com">Pošalji</a>
-                  </div>
-                  {/* Success message */}
-                  {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                  <p className="text-sm text-gray-400 mt-3">Vaša email adresa će biti spremljena kako bi vas mogli kontaktirati.</p>
-                </form>
+                <SignupForm/>
+                
               </div>
               <Lottie animationData={animation} className='w-80' />
             </div>

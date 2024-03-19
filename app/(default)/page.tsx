@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Simple',
-  description: 'Page description',
+  title: 'Frizline - Online naručivanje',
+  description: 'Online naručivanje za frizerske salone. Ubrzajte svoje poslovanje uz automatske rezervacije termina.',
 }
 
 import Hero from '@/components/hero'

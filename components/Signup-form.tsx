@@ -10,6 +10,8 @@ function isInputNamedElement(e: Element): e is HTMLInputElement & { name: string
 
 const SignupForm = () => {
   const [state, setState] = useState<string>();
+  const [message, setMessage] = useState(false);
+
 
   async function handleOnSubmit(e: React.SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -19,6 +21,8 @@ const SignupForm = () => {
     Array.from(e.currentTarget.elements).filter(isInputNamedElement).forEach((field) => {
         if (!field.name) return;
         formData[field.name] = field.value;
+        field.value = '';
+        setMessage(true);
     });
 
     setState('loading');
@@ -46,6 +50,14 @@ const SignupForm = () => {
       <button className={buttonVariants()} disabled={state === 'loading'}>
         Pošalji
       </button>
+      {
+          message ? (
+            <p className='text-green'>Uspješno poslano. Uskoro ćete dobiti potvrdu na email.</p>
+          ) :
+  (
+    <span></span>
+  )
+      }
     </form>
   )
 }

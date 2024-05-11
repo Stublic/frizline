@@ -12,9 +12,9 @@ export async function POST(request: Request) {
 
   try {
     await resend.emails.send({
-      from: 'Frizline <info@webica.agency>' || '',
+      from: 'Jurica @Frizline <jurica@webica.hr>' || '',
       to: email,
-      subject: 'Hvala ti na interesu',
+      subject: 'Uspješno ste se prijavili na Frizline! 🎉',
       react: Test({
         firstName,
       })

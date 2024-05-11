@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 import TestimonialImage from '@/public/images/female.webp'
+import TestimonialImage2 from '@/public/images/sabina.png'
 
 export default function Testimonials() {
   const [tab, setTab] = useState<number>(1)
@@ -83,8 +84,39 @@ export default function Testimonials() {
 
             <div className="relative flex items-start border-2 border-gray-200 rounded bg-white" ref={tabs}>
               {/* Testimonial */}
+             
               <Transition
                     show={tab === 1}
+                    appear={true}
+                    className="relative flex items-start border-2 border-gray-200 rounded bg-white"
+                    enter="transition ease-in-out duration-700 transform order-first"
+                    enterFrom="opacity-0 translate-y-16"
+                    enterTo="opacity-100 translate-y-0"
+                    // leave="transition ease-in-out duration-300 transform absolute"
+                    // leaveFrom="opacity-100 translate-y-0"
+                    // leaveTo="opacity-0 -translate-y-16"
+                    unmount={false}                     
+                  >
+                  
+              <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
+                <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                  <Image alt='testimonialImg' width={90} height={90} className='rounded-full' src={TestimonialImage2}></Image>
+
+                  <svg className="absolute top-0 right-0 -mt-3 -mr-8 w-16 h-16 fill-current text-[#efa9fa]" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M37.89 58.338c-2.648-5.63-3.572-10.045-2.774-13.249.8-3.203 8.711-13.383 23.737-30.538l2.135.532c-6.552 10.033-10.532 17.87-11.939 23.515-.583 2.34.22 6.158 2.41 11.457l-13.57 8.283zm-26.963-6.56c-2.648-5.63-3.572-10.046-2.773-13.25.799-3.203 8.71-13.382 23.736-30.538l2.136.533c-6.552 10.032-10.532 17.87-11.94 23.515-.583 2.339.22 6.158 2.41 11.456l-13.57 8.283z" />
+                  </svg>
+                </div>
+                <blockquote className="text-xl font-medium mb-4">
+                  
+"Puno nam je pomoglo riješenje za online naručivanje. Kao vlasnica frizerskog salona, bila sam opterećena organizacijom termina i neprestanim telefonskim pozivima klijenata. S ovim rješenjem, sada imamo potpunu kontrolu nad našim rasporedom i rezervacijama, a moja zaposlenica troši puno manje vremena na telefoniranje. Smanjili smo obujam posla, i poboljšali iskustvo naših klijenata."</blockquote>
+                <cite className="block font-bold text-lg not-italic mb-1">Sabina Vlahović</cite>
+                <div className="text-gray-600">
+                  <span>Vlasnica salona </span> <a className="text-[#3F2182] hover:underline" href="https://sabininabrijacnica.com/"> Sabinina Brijačnica</a>
+                </div>
+              </div>
+              
+              </Transition> <Transition
+                    show={tab === 2}
                     appear={true}
                     className="relative flex items-start border-2 border-gray-200 rounded bg-white"
                     enter="transition ease-in-out duration-700 transform order-first"
@@ -122,37 +154,6 @@ export default function Testimonials() {
                   <span>Korisnik</span> <a className="text-[#3F2182] hover:underline" href="#0">FS Mirna</a>
                 </div>
               </div>
-              </Transition>
-              <Transition
-                    show={tab === 2}
-                    appear={true}
-                    className="relative flex items-start border-2 border-gray-200 rounded bg-white"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    // leave="transition ease-in-out duration-300 transform absolute"
-                    // leaveFrom="opacity-100 translate-y-0"
-                    // leaveTo="opacity-0 -translate-y-16"
-                    unmount={false}                     
-                  >
-                  
-              <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
-                <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
-                  <Image alt='testimonialImg' width={90} height={90} className='rounded-full' src={TestimonialImage}></Image>
-
-                  <svg className="absolute top-0 right-0 -mt-3 -mr-8 w-16 h-16 fill-current text-[#efa9fa]" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37.89 58.338c-2.648-5.63-3.572-10.045-2.774-13.249.8-3.203 8.711-13.383 23.737-30.538l2.135.532c-6.552 10.033-10.532 17.87-11.939 23.515-.583 2.34.22 6.158 2.41 11.457l-13.57 8.283zm-26.963-6.56c-2.648-5.63-3.572-10.046-2.773-13.25.799-3.203 8.71-13.382 23.736-30.538l2.136.533c-6.552 10.032-10.532 17.87-11.94 23.515-.583 2.339.22 6.158 2.41 11.456l-13.57 8.283z" />
-                  </svg>
-                </div>
-                <blockquote className="text-xl font-medium mb-4">
-                  
-"Puno nam je pomoglo riješenje za online naručivanje. Kao vlasnica frizerskog salona, bila sam opterećena organizacijom termina i neprestanim telefonskim pozivima klijenata. S ovim rješenjem, sada imamo potpunu kontrolu nad našim rasporedom i rezervacijama, a moja zaposlenica troši puno manje vremena na telefoniranje. Smanjili smo obujam posla, i poboljšali iskustvo naših klijenata."</blockquote>
-                <cite className="block font-bold text-lg not-italic mb-1">Sabina Vlahović</cite>
-                <div className="text-gray-600">
-                  <span>Vlasnica salona </span> <a className="text-[#3F2182] hover:underline" href="https://sabininabrijacnica.com/"> Sabinina Brijačnica</a>
-                </div>
-              </div>
-              
               </Transition>
             </div>
 

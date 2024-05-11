@@ -37,7 +37,7 @@ export const WelcomeEmail = ({ firstName }: WelcomeEmailProps) => (
           Hvala ti na interesu za Frizline - rješenje za online naručivanje skrojeno za frizerske salone.
         </Text>
         <Text style={{ ...text, marginBottom: '14px' }}>
-          Trenutno radimo na poboljšanju usluge i nismo u mogućnosti primati nove frizerske salone. Javiti ćemo ti se čim ponovno počnemo primati nove salone.
+          Trenutno radimo na poboljšanju usluge i nismo u mogućnosti primati nove frizerske salone. Javiti ćemo ti se čim ponovno počnemo primati nove salone. <br /> Kao zahvalu za tvoj interes, poklanjamo ti 1 mjesec besplatnog korištenja Frizline platforme 🎁. <br /> Čujemo se uskoro!
         </Text>
 
         <Text style={footer}>

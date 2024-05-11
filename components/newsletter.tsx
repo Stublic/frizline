@@ -20,8 +20,9 @@ export default function Newsletter() {
 
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-black mb-2">Trenutno radimo na poboljšanju Frizline usluge!</h3>
-                <p className="text-gray-700 text-lg mb-6">Ukoliko ste zainteresirani, ostavite nam svoju email adresu i kontaktirati ćemo vas kada usluga bude dostupna.</p>
+                <h2 className="h2 text-black mb-2 tracking-wider">Prednarudžbe su otvorene!</h2>
+                
+                <p className="text-gray-700 text-lg mb-6">Ostavite nam svoju email adresu i ostvarite 1 mjesec besplatno. </p>
 
                 {/* CTA form */}
                 <SignupForm/>
